@@ -1,0 +1,17 @@
+Structure : adversaires
+
+
+double DQN en meme temps : celui du pod d'attaque (score : CP)
+double DQN en meme temps : celui du pod de defense (score : -CP attaquant adverse)
+
+Puis on obtient un pod d'attaque et un pod de défense capable de jouer
+
+Puis on refait ce double DQN mais cette fois ci l'adversaire est l'entrainement du précédent
+
+
+
+En gros :
+initialement : 
+entrainement 1 attaquant vs 0
+Puis 2 pods vs 1 attaquant
+Puis 2 pods vs 2 pods
